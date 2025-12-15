@@ -1,5 +1,5 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView, type Transition } from "framer-motion";
+import { useRef, type AnyActionArg } from "react";
 import {
   Card,
   Text,
@@ -29,7 +29,11 @@ const cardVariants = {
     y: -12,
     scale: 1.03,
     boxShadow: "0 30px 60px rgba(0,0,0,0.35)",
-    transition: { type: "spring", stiffness: 300, damping: 20 },
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 20,
+    } as Transition<AnyActionArg>,
   },
 };
 
