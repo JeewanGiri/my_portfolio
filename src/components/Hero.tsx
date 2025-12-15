@@ -112,7 +112,13 @@ const Hero = () => {
                 <IconBrandGithub size={20} />
                 VIEW PROJECTS
               </a>
-              <a href="#contact" className="neon-btn">
+
+              {/* Download CV Button */}
+              <a
+                href="/public/Jeewan Cv.pdf"
+                download="Jeewan_Giri_CV.pdf"
+                className="neon-btn"
+              >
                 <IconDownload size={20} />
                 DOWNLOAD CV
               </a>
@@ -163,9 +169,7 @@ const Hero = () => {
           <motion.div
             className="flex-1 flex justify-center"
             variants={itemVariants}
-          >
-
-          </motion.div>
+          ></motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}
